@@ -25,7 +25,7 @@ requirements:
     - python >={{ python_min }}
     - apache-airflow >=2.8,<3
     - apache-airflow-providers-ssh
-    - airflow-config
+    - airflow-config >=1.5,<1.7
     - pydantic >=2
 
 test:
