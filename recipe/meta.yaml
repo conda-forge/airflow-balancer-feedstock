@@ -1,5 +1,5 @@
 {% set name = "airflow-balancer" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-balancer/airflow_balancer-{{ version }}.tar.gz
-  sha256: 4219094f019cd16b061f80972a1d19a229fbe69661aa7974b12a699578d7080d
+  sha256: 68f0ab9cda67eed6bb1b30847befbf64624cd372332cec933e92084e027815cf
 
 build:
   number: 0
