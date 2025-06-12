@@ -1,5 +1,5 @@
 {% set name = "airflow-balancer" %}
-{% set version = "0.5.1" %}
+{% set version = "0.7.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-balancer/airflow_balancer-{{ version }}.tar.gz
-  sha256: c5c350fbd952bc56825388820fecb25c4975c5498efeabb2fa00ff29999cdf8e
+  sha256: e196c021455f04c79a0a52f6fead9a2966e4241b6c5e596ec627fbee77a2df45
 
 build:
   number: 0
@@ -28,9 +28,10 @@ requirements:
     - python >={{ python_min }}
     - apache-airflow >=2.8,<3
     - apache-airflow-providers-ssh
-    - airflow-config >=1.7,<1.9
+    - airflow-config >=1.10,<1.11
     - hydra-core
     - omegaconf
+    - pkn >=0.1.3
     - pydantic >=2
 
 test:
