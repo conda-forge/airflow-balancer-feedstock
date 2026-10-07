@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: airflow-balancer
-  version: "0.7.10"
+  version: "0.7.11"
   python_min: "3.11"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/a/airflow-balancer/airflow_balancer-${{ version }}.tar.gz
-  sha256: 269d2723f0d8e244b126f73c0223503a7e3c22d69b4d326afd9ea68f05c3be06
+  sha256: dd5a0e8edffd25ecd1b2cb3cc527dd3d20939a820ce7c214e815f1ab0d3838a8
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
