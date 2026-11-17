@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: airflow-balancer
-  version: "0.7.12"
+  version: "0.7.13"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/a/airflow-balancer/airflow_balancer-${{ version }}.tar.gz
-  sha256: 6858906512cd71295e6bc2970844f9af5357f7edc9a11f8f69d230e916edd629
+  sha256: e9a04cf5bcd242b6da18c09acaddc677c0d9d3091b6a1870b2c13af6d96bb3e0
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - pnpm
   run:
     - python >=${{ python_min }}
-    - airflow-config >=1.12,<1.13
+    - airflow-config >=1.12,<1.14
     - airflow-pydantic >=1.6,<1.8
     - pydantic >=2
 
